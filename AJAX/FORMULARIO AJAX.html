@@ -1,0 +1,179 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Documento sem título</title>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+<style>
+*{ font-family:"Open Sans";
+   font-size:16px 
+   }
+
+
+label{ display:block;}
+
+input, select { 
+         border:1px solid  hsla(0,3%,71%,1.00); 
+		 height:18px;
+		 padding:8px;
+		 margin:10px 0 20px;
+      }
+
+select{height:36px;  }
+		 
+input[name="nome"], 
+input[name="email"], 
+
+input[name="cpf"],
+input[name="end"],
+input[name="telefone"],
+input[name="DataNascimento"], 
+input[name="celular"],
+input[name="bairro"],
+input[name="cidade"],
+input[name="senha"] ,
+input[name="confirmasenha"] ,
+input[name="telefone"],
+input[name="DataNascimento"], 
+input[name="celular"] {width:93%}	
+
+
+
+
+
+select[name="sexo"], select[name="uf"]{ width:96%; }
+
+button{    padding: 15px 20px;
+           margin-top:30px;
+		 }
+
+.cols{ width:50%;
+       float:left;
+	 }	
+	 
+section{ width:90%;
+         padding:40px;
+		 margin:auto;
+		 border: hsla(0,1%,83%,1.00)1px solid;
+		
+		 }
+
+.part > div{ width:33%;
+            float:left}
+			
+
+.part .col1{ width:60%;}
+
+.col1 + div,
+.col1 + div + div{ width:20%;}
+
+.part > .col2{ widows:33%;}
+
+h2{ font-variant:normal; 
+    font-weight:bold;
+	font-size:1.71429em;}
+input[type="checkbox"]{ width:15px;  height:15px;  vertical-align: auto}
+
+label:after	{ content:" * ";
+color: #D1CDCD }
+
+label[for="comp"]:after{content:"";} 
+</style>
+
+
+
+
+</head>
+
+<body>
+<section>
+<form>
+<h2>Meu Endereço</h2>
+ <div>
+      <label for="cep">CEP </label>
+        <input  type="text" name="cep" id="cep" placeholder="Somento Número"   />
+ </div>
+ <span id="load" style="position:absolute; z-index:200;  left:600px;"></span>
+
+
+ <div class="part">
+      <div class="col1">
+         <label for="end">Endereço </label>
+            <input  type="text" name="end" id="end" placeholder="Ex: R. Diplomatas"/>
+      </div>
+      <div>
+         <label for="num">Numero </label> 
+           <input  type="text" name="num" id="num" placeholder="Ex: 478"/>
+      </div>
+      <div>
+          <label for="comp">Complemento</label>
+            <input  type="text" name="comp" id="comp" placeholder="Ex: Apt. 57"/>
+       </div>
+ </div>
+  
+  
+
+<div class="part">
+
+<div class="col2"> 
+  <label for="bairro">Bairro </label>
+    <input  type="text" name="bairro" id="bairro" placeholder="Ex: Jd. Embuema"/>
+</div>
+
+<div class="col2">
+   <label for="cidade">cidade </label>
+      <input  type="text" name="cidade" id="cidade"  placeholder="Ex: Embu das Artes"/>
+ </div>
+ 
+ <div class="col2"> 
+  <label for="uf">Estado </label>
+       <select name="uf" id="uf" >
+                 <option SELECTED>Selecione...</option>
+                 <option value="AC" >Acre</option> 
+                 <option value="AL">Alagoas</option> 
+                 <option value="AP">Amapá  </option> 
+                 <option value="AM">Amazonas  </option> 
+                 <option value="BA">Bahia   </option> 
+                 <option value="CE">Ceará  </option> 
+                 <option value="DF">Distrito Federal    </option> 
+                 <option value="ES">Espírito Santo    </option> 
+                 <option value="GO">Goiás   </option> 
+                 <option value="MA">Maranhão    </option> 
+                 <option value="MT">Mato Grosso   </option> 
+                 <option value="MS">Mato Grosso do Sul    </option> 
+                 <option value="MG">Minas Gerais    </option> 
+                 <option value="PA">Pará    </option> 
+                 <option value="PB">Paraíba   </option> 
+                 <option value="PR">Paraná    </option> 
+                 <option value="PE">Pernambuco    </option> 
+                 <option value="PI">Piauí   </option> 
+                 <option value="RJ">Rio de Janeiro    </option> 
+                 <option value="RN">Rio Grande do Norte   </option> 
+                 <option value="RS">Rio Grande do Sul   </option> 
+                 <option value="RO">Rondônia    </option> 
+                 <option value="RR">Roraima   </option> 
+                 <option value="SC">Santa Catarina    </option> 
+                 <option value="SP">São Paulo   </option> 
+                 <option value="SE">Sergipe   </option> 
+                 <option value="TO">Tocantins </option>  
+            </select>
+
+</div>   
+
+ 
+</div>   
+
+<div class="part">
+<button type="button" title="Finalizar cadastro" id="bt">Finalizar cadastro</button>
+</div>
+</form>
+</section>
+
+
+
+
+
+</body>
+<script type="text/javascript" src="ajax.js"></script>
+
+</html>

@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Documento sem título</title>
+  <script type="text/javascript" src="aula 10.js"></script>
+  <style type="text/css">
+    span {
+      display: none
+    }
+  </style>
+
+</head>
+
+<body>
+  <form action="process.php" method="get" name="frm" id="frm" onSubmit="return valida();">
+    <div>
+      Nome:
+      <input type="text" name="nome" id="nome" onkeypress="limpa(0)">
+      <span style="color:red">*</span>
+    </div>
+    <br/>
+    <div>
+      Idade:
+      <input type="number" name="nome" id="idade" onkeypress="limpa(0)">
+      <span style="color:red">*</span>
+    </div>
+    <hr/>
+    <h3>Dados profissionais</h3>
+    <div>
+      Escolaridade:
+      <select id="escola" name="escola">
+        <option value="escolha" selected>Escolha</option>
+        <option value="fundamental">Ensino Fundamental</option>
+        <option value="medio">Ensino Médio</option>
+        <option value="superior">Ensino Superior</option>
+      </select>
+      <span style="color:red">*</span>
+    </div>
+    <br/>
+    <div>
+      Área de atuação:
+      <input type="radio" name="atuacao" id="gerencia" value="gerencia" onclick="limpa(1)">Gêrencia
+      <input type="radio" name="atuacao" id="financeiro" value="financeiro" onclick="limpa(1)">Financeiro
+      <input type="radio" name="atuacao" id="recepcao" value="recepcao" onclick="limpa(1)">Recepção
+      <span style="color:red">*</span>
+    </div>
+    <br/>
+    <input type="submit" value="ENVIAR">
+
+  </form>
+
+
+</body>
+
+</html>

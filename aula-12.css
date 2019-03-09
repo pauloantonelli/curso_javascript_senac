@@ -1,0 +1,14 @@
+@charset "utf8";
+section{
+    display: flex;
+    justify-content: center;
+}
+img{
+    width: 90%;
+    height: 20%;
+    margin: 10px;
+}
+button{
+    width: 30%%;
+    background-color: white;
+}

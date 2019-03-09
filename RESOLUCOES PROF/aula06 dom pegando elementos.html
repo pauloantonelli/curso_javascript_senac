@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Documento sem título</title>
+</head>
+
+<body>
+ <p class="formatacao">P 1 </p>
+ <p>P 2 </p>
+ <p>P 3 </p>
+ <p class="formatacao">P 4</p>
+</body>
+ <script type="text/javascript">
+   // pegar  referencia por atributo class, retorna e,  array
+	 var ArrayClass = document.getElementsByClassName("formatacao");
+	 
+	 ArrayClass[1].style.color = "red";
+	 
+	 var tagP = document.getElementsByTagName("p");
+	 
+	 tagP[1].style.fontSize = "56px";
+ </script>
+</html>
+
+
+
+

@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Documento sem título</title>
+<script type="text/javascript" src="js/arqExterno.js"></script>
+<style type="text/css">
+	span{ display:none}	
+</style>
+</head>
+<body>
+<form action="process.php" method="get" name="frm" id="frm" onSubmit="return valida();">
+  <div>
+   Nome: <input type="text" name="nome" id="nome"   onKeyPress="Limpa(0)" >
+   <span style="color:red">*</span>
+  </div>
+  
+  <div>Sexo 
+  <input type="radio" name="sexo" id="sexo" value="F" onClick="Limpa(1)">FEMINIO
+  <input type="radio" name="sexo" id="sexo" value="M"  onClick="Limpa(1)">MASCULINO
+   
+   <span style="color:red">*</span>
+    </div>
+  <div>
+   Interesse
+    <input type="checkbox" name="rev1" id="rev1" 
+    value="PHP" onClick="Limpa(2)"> PHP
+    
+    <input type="checkbox" name="rev2" id="rev2" 
+    value="MYSQL" onClick="Limpa(2)"> MYSQL
+    
+    <span style="color:red">*</span>
+  </div>
+  
+  <div>
+    Estado <select id="uf" name="uf">
+    	     <option value="SP">São Paulo</option>
+    	      <option value="PL">PALMEIRAS</option>
+    	
+          </select>  	
+  </div>
+	
+  <input type="submit" value="ENVIAR">		
+				
+</form>
+
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Documento sem título</title>
+
+</head>
+
+<body>
+<div> </div>
+<div> </div>
+<div> </div>
+<button >DIV 1</button>
+
+<script type="text/javascript">
+function CaixaAlert(){
+	alert('Vc clicou na Botão');
+}
+
+// PEAGAR O BOTÃO 
+var bt = document.getElementsByTagName("button");
+bt[0].onclick = function(){
+	alert('outra forma de charmar o evento totalmente javascript');
+}
+
+
+	// pega um ponto de referencia a tag , retorna em array
+var tagDiv = document.getElementsByTagName("div");
+
+	
+	
+// innerHtml - paga ou escreva na tag
+tagDiv[2].innerHTML="Pegou a Div 3";	
+// aplicar um css a tag
+tagDiv[2].style.border ="1px solid #000";	
+tagDiv[2].style.width = "200px";
+tagDiv[2].style.height = "200px";
+tagDiv[2].style.backgroundColor= "red";
+// div 1 colocar um texto, cor , w, h = 500	
+tagDiv[0].innerHTML="Pegou a Div 1";	
+// aplicar um css a tag
+tagDiv[0].style.border ="1px solid #000";	
+tagDiv[0].style.width = "500px";
+tagDiv[0].style.height = "500px";
+tagDiv[0].style.backgroundColor= "blue";	
+// div 2 colocar um texto, cor , w, h = 100		
+tagDiv[1].innerHTML="Pegou a Div 2";	
+// aplicar um css a tag
+tagDiv[1].style.border ="1px solid #000";	
+tagDiv[1].style.width = "100px";
+tagDiv[1].style.height = "100px";	
+tagDiv[1].style.backgroundColor= "green";	
+</script>
+
+</body>
+</html>
